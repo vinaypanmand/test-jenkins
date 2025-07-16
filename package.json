@@ -1,0 +1,21 @@
+{
+  "name": "withts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "vi": "npx playwright test autorecord.spec.ts",
+    "de": "npx playwright test autorecord.spec.ts --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.13"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "dotenv": "^17.2.0"
+  }
+}
