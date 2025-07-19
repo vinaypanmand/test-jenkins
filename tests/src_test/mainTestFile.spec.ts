@@ -4,7 +4,7 @@ import { test, expect } from '../../tests/fixture/TestFixture';
 // import { ResultPage } from "../src/ResultPage";
 // import { PlaylistPage } from "../src/PlaylistPage";
 
-test.only('my test', async ({ page, googlehomePage, resultPage, playlistPage }) => {
+test('my test', async ({ page, googlehomePage, resultPage, playlistPage }) => {
     console.log('test is running...');
    // const googleHomePage = new GoogleHomePage(page);
     await googlehomePage.navigateToGoogle();
@@ -25,14 +25,14 @@ test.only('my test', async ({ page, googlehomePage, resultPage, playlistPage }) 
 });
 
 
-test('test2', () => {
+test('test2',{tag: ['@vinay']}, () => {
 
     console.log('test2 is running...');
     console.log('test2 is finished...');
 
 })
 
-test('test3', () => {
+test('test3', {tag: ['@vinay']}, () => {
 
     console.log('test3 is running...');
     console.log('test3 is finished...');
